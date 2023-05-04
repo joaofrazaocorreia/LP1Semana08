@@ -29,6 +29,11 @@ namespace GameUnits
             }
         }
 
+        public override string ToString()
+        {
+            return $"MilitaryUnit: HP={Health} Cost={Cost.ToString("0.00")} AP={AttackPower} XP={XP}";
+        }
+
         public MilitaryUnit(int mov, int health, int attackPower) : base(mov, health)
         {
             AttackPower = attackPower;

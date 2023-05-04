@@ -10,6 +10,10 @@ namespace GameUnits
         protected int movement;
         public virtual int Health { get; set; }
         public abstract float Cost { get; }
+        public override string ToString()
+        {
+            return $"SettlerUnit: HP={Health} Cost={Cost.ToString("0.00")}";
+        }
 
         public Unit(int movement, int health)
         {
