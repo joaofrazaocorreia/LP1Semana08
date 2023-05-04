@@ -7,16 +7,17 @@ namespace GameUnits
 {
     public class SettlerUnit : Unit
     {
-        public SettlerUnit()
+        public override float Cost
         {
-            base(movement) = 1;
-            base(Health) = 2;
-            Cost = 5;
-
+            get
+            {
+                return 5;
+            }
         }
-        public void Settle(Vector2 location)
-        {
 
+        public SettlerUnit() : base(1, 2)
+        {
+            
         }
     }
 }

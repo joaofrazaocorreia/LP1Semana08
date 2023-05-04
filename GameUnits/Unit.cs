@@ -8,7 +8,7 @@ namespace GameUnits
     public abstract class Unit
     {
         protected int movement;
-        public int Health() { get; set; }
+        public virtual int Health { get; set; }
         public abstract float Cost { get; }
 
         public Unit(int movement, int health)
@@ -19,7 +19,7 @@ namespace GameUnits
 
         public void Move()
         {
-            Console.WriteLine($"{Name} moved {movement} tiles!");
+            Console.WriteLine($"The unit moved {movement} tiles!");
         }
     }
 }
