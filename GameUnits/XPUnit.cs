@@ -10,7 +10,7 @@ namespace GameUnits
         public int XP { get; protected set; }
         public override string ToString()
         {
-            return $"{base.ToString()} XP = {XP}";
+            return $"{base.ToString()} XP={XP}";
         }
         public XPUnit(int mov, int health) : base(mov, health)
         {
