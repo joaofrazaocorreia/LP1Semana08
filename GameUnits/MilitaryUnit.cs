@@ -41,7 +41,7 @@ namespace GameUnits
         public void Attack(Unit attackedUnit)
         {
             XP++;
-            attackedUnit.Health -= AttackPower;
+            attackedUnit.Health--;
         }
     }
 }

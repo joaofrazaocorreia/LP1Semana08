@@ -12,7 +12,7 @@ namespace GameUnits
         public abstract float Cost { get; }
         public override string ToString()
         {
-            return $"SettlerUnit: HP={Health} Cost={Cost.ToString("0.00")}";
+            return $"{GetType().Name} HP={Health} Cost={Cost}";
         }
 
         public Unit(int movement, int health)
